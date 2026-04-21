@@ -52,8 +52,8 @@ const MOCK_PRODUCTS = [
 
 const ProductCard = ({ data, onAddToCart }) => {
   return (
-    <div className="bg-white rounded-xl border border-gray-100/80 overflow-hidden hover:shadow-xl transition-all duration-300 group flex flex-col h-full">
-      <div className="relative aspect-square bg-gray-50 overflow-hidden cursor-pointer shrink-0">
+    <div className="bg-white rounded-xl border border-gray-100/80 hover:shadow-xl transition-all duration-300 group flex flex-col h-full">
+      <div className="relative aspect-square bg-gray-50 cursor-pointer shrink-0">
         <img 
           src={data.coverUrl} 
           alt={data.title} 
@@ -186,7 +186,7 @@ export default function App() {
           </div>
         </div>
 
-        <nav className="hidden md:block border-t border-gray-100">
+        <nav className="border-t border-gray-100">
           <div className="max-w-7xl mx-auto px-6 flex gap-8 text-base">
             <a href="#" className="py-2.5 text-blue-600 font-bold border-b-2 border-blue-600">Home Recommend</a>
             <a href="#" className="py-2.5 text-gray-600 hover:text-blue-600">Appliances</a>
@@ -218,7 +218,7 @@ export default function App() {
 
       <main>
         <div className="w-full max-w-7xl mx-auto md:px-6 lg:px-8 md:mt-6">
-          <div className="relative bg-gray-900 md:rounded-2xl overflow-hidden aspect-[16/9] md:aspect-[21/9] flex items-center">
+          <div className="relative bg-gray-900 md:rounded-2xl aspect-[16/9] md:aspect-[21/9] flex items-center">
             <img
               src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&q=80&w=2000"
               alt="Smart Kitchen"
@@ -234,7 +234,7 @@ export default function App() {
                 Smart Living <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-teal-300">Within Reach</span>
               </h1>
-              <p className="text-gray-300 text-base md:text-lg mb-6 md:mb-8 max-w-md hidden md:block leading-relaxed">
+              <p className="text-gray-300 text-base md:text-lg mb-6 md:mb-8 max-w-md leading-relaxed">
                 Curated whole-house smart appliances, one-stop shopping. Using the latest IoT technology to make your home understand you better.
               </p>
               <button className="bg-blue-600 hover:bg-blue-500 text-white text-base font-bold py-3 px-8 rounded-full transition-all shadow-lg hover:shadow-blue-600/40">
@@ -283,7 +283,7 @@ export default function App() {
         </div>
       </main>
 
-      <footer className="bg-white border-t border-gray-200 mt-auto hidden md:block">
+      <footer className="bg-white border-t border-gray-200 mt-auto">
         <div className="max-w-7xl mx-auto px-6 py-10">
           <div className="grid grid-cols-3 gap-8">
             <div className="col-span-1">
